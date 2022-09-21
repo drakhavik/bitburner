@@ -1,6 +1,6 @@
 /** @param {NS} ns */
 export async function main(ns) {
-    const host = ns.getHostName()
+    const host = ns.getHostname()
     /** @param {NS} ns */
 	while(true) {
 		if (ns.getServerSecurityLevel(host) > 5) {await ns.weaken(host)}
